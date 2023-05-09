@@ -1,0 +1,40 @@
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  /***** font sizes *****/
+  --txt-xs: 0.75rem;
+  --txt-sm: 0.875rem;
+  --txt-base: 1rem;
+  --txt-lg: 1.125rem;
+  --txt-xl: 1.25rem;
+  --txt-2xl: 1.5rem;
+  --txt-3xl: 1.875rem;
+  --txt-4xl: 2.25rem;
+  --txt-5xl: 3rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: grid;
+  height: 100vh;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  box-shadow: none;
+}
+a {
+  cursor: pointer;
+}
+.grid__col_2 {
+  display: grid;
+  grid-template-columns: 30fr 70fr;
+}

@@ -1,0 +1,123 @@
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  /***** font sizes *****/
+  --txt-xs: 0.75rem;
+  --txt-sm: 0.875rem;
+  --txt-base: 1rem;
+  --txt-lg: 1.125rem;
+  --txt-xl: 1.25rem;
+  --txt-2xl: 1.5rem;
+  --txt-3xl: 1.875rem;
+  --txt-4xl: 2.25rem;
+  --txt-5xl: 3rem;
+}
+
+/********** container ********/
+
+main {
+  width: 60%;
+  height: 75%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.09);
+  padding: var(--txt-base);
+}
+/**************** sideBar ****************/
+
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/Multi-step-form-main/assets/images/bg-sidebar-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+  padding: 2rem;
+  row-gap: 2rem;
+  height: 100%;
+  border-radius: 10px;
+}
+.step__container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.step__number {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  /* background-color: var(--light-blue); */
+  border: 0.5px solid var(--light-blue);
+  border-radius: 50%;
+  width: var(--txt-4xl);
+  height: var(--txt-4xl);
+}
+.step__title {
+  font-size: var(--txt-sm);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--pastel-blue);
+  opacity: 0.8;
+}
+.step__description {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/********* FORM CARD************/
+.step__card__container {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.step__card_header {
+  color: var(--marine-blue);
+  letter-spacing: 0.6px;
+  margin-bottom: 0.6rem;
+}
+.step__card_description {
+  font-size: var(--txt-sm);
+  color: var(--pastel-blue);
+  /* opacity: 0.7; */
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.step__one__form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-weight: 700;
+  color: var(--marine-blue);
+  font-size: var(--txt-sm);
+  margin-bottom: 5px;
+}
+.step__one__form input {
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 0.5px solid var(--pastel-blue);
+  margin-bottom: 20px;
+}
+.step__one__form button {
+  font-size: var(--txt-xs);
+  font-weight: 700;
+  color: var(--light-blue);
+  width: 90px;
+  background-color: var(--marine-blue);
+  padding: 8px 8px;
+  border-radius: 5px;
+  margin-top: 4rem;
+  align-self: flex-end;
+}
