@@ -44,7 +44,7 @@ main {
 .step__container {
   display: flex;
   gap: 1rem;
-  align-items: center;
+  /* align-items: center; */
 }
 .step__number {
   /* color: rgb(255, 78, 78); */
@@ -164,3 +164,64 @@ label {
   box-shadow: 0px 1px 10px var(--purplish-blue);
   background-color: hsla(243, 100%, 62%, 0.116);
 }
+/***** slider *****/
+.switch {
+  /* margin-top: 3rem; */
+  position: relative;
+  width: 60px;
+  height: 29px;
+  cursor: pointer;
+  background-color: var(--purplish-blue);
+  border-radius: 20px;
+  border: 0.2px solid var(--pastel-blue);
+  /* align-self: center; */
+}
+
+#plan-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  top: 4px;
+  bottom: 0px;
+  left: 4px;
+  right: 0px;
+  border-radius: 50%;
+}
+#plan-checkbox:checked + .slider {
+  transform: translateX(31px);
+}
+
+#plan-checkbox:checked + .slider::before {
+  background-color: rgb(255, 0, 0);
+}
+/***** hiding forms *****/
+/* .active-form {
+  transform: translateX(0%);
+  opacity: 1;
+  user-select: text;
+  pointer-events: all;
+}
+.step-one {
+  transform: translateX(100%);
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+} */
